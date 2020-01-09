@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 import Firebase
+//
 
 class SignUpViewController: UIViewController {
     
@@ -35,6 +36,10 @@ class SignUpViewController: UIViewController {
                Utilities.styleFilledButton(SignUpButton)
     }
     
+    @IBAction func BackButtonTapped(_ sender: Any) {
+        //self.validateFields()
+       
+    }
     //check if the fields are validated
     func validateFields() -> String?
        {
@@ -59,26 +64,28 @@ class SignUpViewController: UIViewController {
         
     @IBAction func SignUpTapped(_ sender: Any) {
         //create the user
-     //   Auth.auth().createUser(withEmail: <#T##String#>, password: <#T##String#>) { (result, err) in
+    /* Auth.auth().createUser(withEmail: <#T##String#>, password: <#T##String#>) { (result, err) in
             //check for errors
-          //  if err != nil {
+          if err != nil {
                 //there was an error creating the user
-               // self.showError("error creathin the usdrt")
+               self.showError("error creathin the usdrt")
                 
-          //  }
-          //  else{
+           }
+            else{
                 // if no error
-               //watch code with chris video in minute 1:00:19
-           // }
-      //  }
+              // watch code with chris video in minute 1:00:19
+           }
+      }
         //transition to the home screen
         
         //validate fields
-              //  let error = validateFields()
+        
+               let error = validateFields()
                 
-                //if error != nil{
-               //    showError(error!)
-               // }
+                if error != nil{
+                showError(error!)
+               }
+ */
 
     }
     

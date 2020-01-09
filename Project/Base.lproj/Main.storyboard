@@ -93,6 +93,7 @@
                                         <state key="normal" title="Sign up"/>
                                         <connections>
                                             <action selector="SignUpTapped:" destination="2pW-vQ-f9V" eventType="touchUpInside" id="p6j-Pc-0dc"/>
+                                            <segue destination="9MP-cD-3BV" kind="show" id="37Q-d4-iOR"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PI3-BX-FrW">
@@ -108,6 +109,14 @@
                                     <constraint firstItem="1iH-VG-2Bm" firstAttribute="height" secondItem="9OP-Ot-8X7" secondAttribute="height" id="hSK-Pf-Sif"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3G-SB-FoH">
+                                <rect key="frame" x="26" y="44" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="BackButtonTapped:" destination="2pW-vQ-f9V" eventType="touchUpInside" id="Ui9-Rs-QRi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -170,6 +179,11 @@
                                     <constraint firstItem="brA-Id-bYK" firstAttribute="height" secondItem="X62-uQ-hyJ" secondAttribute="height" id="rd0-76-Tjm"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7s-Qw-sZ5">
+                                <rect key="frame" x="26" y="44" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -189,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="USb-wt-InB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2138" y="595"/>
+            <point key="canvasLocation" x="2138" y="563"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4OQ-ZD-Ncj">
@@ -201,6 +215,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="neT-LO-NjR"/>
                     </view>
+                    <navigationItem key="navigationItem" id="v8R-A6-1CD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NZg-9h-Go8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -234,6 +249,7 @@
                             <outlet property="delegate" destination="GTt-91-eXC" id="l0c-Vg-ZUw"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="dbb-V6-OEz"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LN5-1O-RMR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -297,6 +313,9 @@
                                     <constraint firstAttribute="height" constant="50" id="H5T-JH-qh0"/>
                                 </constraints>
                                 <state key="normal" title="Submit Consult"/>
+                                <connections>
+                                    <segue destination="GTt-91-eXC" kind="show" id="iUY-uP-KJj"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Medical Consult" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVP-be-Aq9">
                                 <rect key="frame" x="146" y="95" width="123" height="21"/>
@@ -326,6 +345,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2de-gQ-yw2"/>
                     </view>
+                    <navigationItem key="navigationItem" id="faO-w9-Ovr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q29-KP-Rey" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
